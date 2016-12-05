@@ -1,0 +1,72 @@
+###    html    ###
+
+<!DOCTYPE html> ok
+<html> ok
+<head> ok
+<title> ok
+<body> ok
+<link> ok
+<div> ok
+<ul> ok
+<li> ok
+<a> ok
+<h1,2,3,4,5>ok
+<img>ok
+<p>ok
+<!-- comment --> ok
+<meta> ok
+<script> ok
+<hr> ok
+<br> ok
+<ol> ok
+<table> ok
+<tr> ok
+<td> ok
+<th> ok
+特殊文字
+
+////////////////////////////////////////////////
+
+###    css    ###
+
+wide
+overflow
+back-ground
+pading ok
+marge ok
+float ok
+clear
+scroll
+font-size ok
+color ok
+text-align ok
+back-ground-crip
+back-ground-origin
+font-family ok
+text-shadow
+list-style
+border-bottom
+height ok
+width ok
+text-indent
+text-decoration
+border-bottom-style
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

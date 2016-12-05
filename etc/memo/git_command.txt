@@ -1,0 +1,42 @@
+#初期設定
+git config --global user.email "sdfasfa@gmail.com"
+git config --global user.name "Nozomi"
+
+
+#クローン
+git clone hogeURL
+
+#新規ファイル追加
+git add 
+
+#コミット
+git commit 変更ファイル -m 'コメント'
+
+コメント命名規則
+新規作成    [Add]
+更    新    [Update]
+削    除    [Delete]
+
+#プッシュ
+git push origin master 
+
+#プル
+git pull
+
+#gitのステータスを確認する。
+git status
+
+#コミットログを確認する
+git log
+
+#proxy設定
+コマンド上
+export http_proxy=http://172.16.2.26:8080
+export https_proxy=http://172.16.2.26:8080
+
+設定
+git config --global http.proxy http://172.16.2.26:8080
+解除
+git config --global --unset http.proxy
+
+
