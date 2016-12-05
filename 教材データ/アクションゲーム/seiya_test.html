@@ -65,7 +65,7 @@
                     var scene = new Scene();
                     var blocks = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
 
-                    var blockset = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3];
+                    var blockset = [3,3,3,3,3,3,3,3,0,0,0,0,0,5,3,3,3,3,4,5,6,7,8,9,10,3,3,3,3,3,3,3,3,3,3,3];
 
 
 
@@ -129,10 +129,10 @@
                         enemy.left = true;
                         enemy.addEventListener(Event.ENTER_FRAME,function(){
                             var ax = 0;
-                            if(map.hitTest(enemy.x + enemy.vx + 5,enemy.y + enemy.vy + enemy.height) == false){
+                            if((map.hitTest(enemy.x + enemy.vx + 5,enemy.y + enemy.vy + enemy.height) == false)){
                                 enemy.left = false;
                             }
-                            if(map.hitTest(enemy.x + enemy.vx + 5 + enemy.width - 10,enemy.y + enemy.vy +enemy.height) == false){
+                            if((map.hitTest(enemy.x + enemy.vx + 5 + enemy.width - 10,enemy.y + enemy.vy +enemy.height) == false)  ){
                                 enemy.left = true;
                             }
                             if(enemy.left){
