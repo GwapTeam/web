@@ -129,10 +129,10 @@
                         enemy.left = true;
                         enemy.addEventListener(Event.ENTER_FRAME,function(){
                             var ax = 0;
-                            if((map.hitTest(enemy.x + enemy.vx + 5,enemy.y + enemy.vy + enemy.height) == false)){
+                            if((map.hitTest(enemy.x + enemy.vx + 5,enemy.y + enemy.vy + enemy.height) == false) || (map.hitTest(enemy.x+enemy.vx + 5,enemy.y + enemy.vy+(enemy.height/2)))){
                                 enemy.left = false;
                             }
-                            if((map.hitTest(enemy.x + enemy.vx + 5 + enemy.width - 10,enemy.y + enemy.vy +enemy.height) == false)  ){
+                            if((map.hitTest(enemy.x + enemy.vx + 5 + enemy.width - 10,enemy.y + enemy.vy +enemy.height) == false)  ||(map.hitTest(enemy.x + enemy.vx + 5 + enemy.width - 10,enemy.y + enemy.vy+(enemy.height/2)))){
                                 enemy.left = true;
                             }
                             if(enemy.left){
