@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta charset="utf-8">
 
     <title>ゲーム紹介ホームページ</title>
 
@@ -28,199 +29,16 @@
     <!-- sweetalert CSS and JS -->
     <link href="../vender/sweetalert/sweetalert.css" rel="stylesheet">
     <script src="../vender/sweetalert/sweetalert.min.js"></script>
-    
-    <meta charset="utf-8">
+
+    <!-- JQuery -->
     <script src="../vender/jpuery/jquery.min.js"></script>
-    <script>
-        // 単語
-        var wordList = [
-            "Web","Game","iPhone","android"
-        ];
 
-        // 時間制限
-        var timeLimit = 600;    //60.0秒
+    <!-- typing CSS and JS -->
+    <script type="text/javascript" src="js/typing.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/typing.css">
 
-        var timer1;
-        var wordStr;
-        var wordChars;
-        var charIndex;
-        var messageArea;
-        var wordArea;
-        var typeArea;
-        var score;
-        var timeLeft;
-
-        window.onload = function () {
-            messageArea = document.getElementById("message");
-            wordArea = document.getElementById("word");
-            typeArea = document.getElementById("type");
-            startButton = document.getElementById("start-button");
-            progressBar = document.getElementById("remain");
-        }
-
-        // 3秒後に開始
-        function onStartButtonClick() {
-            startButton.style.display = "none";
-            messageArea.textContent = "Ready?";
-            setTimeout("startTyping()", 300);
-        }
-
-        // 開始
-        function startTyping() {
-            score = 0;
-            timeLeft = timeLimit;
-            nextWord();
-            //countDown();
-            timer1 = setInterval("countDown()", 100);
-            startButton.disabled = true;
-        }
-
-        // 終了
-        function stopTyping() {
-            clearInterval(timer1);
-            wordChars = [];
-            if(timeLeft <= 0){
-                messageArea.textContent = "Score: " + score;
-            }else{
-                messageArea.textContent = (timeLeft/10) + "秒残しでクリア！";
-            }
-            wordArea.textContent = "";
-            typeArea.textContent = "";
-            startButton.disabled = false;
-        }
-
-        // 次の単語を表示
-        function nextWord() {
-            charIndex = 0;
-            var random = Math.floor(Math.random() * wordList.length);
-            wordArea.textContent = wordList[random];
-            typeArea.textContent = "";
-            wordChars = wordList[random].toUpperCase().split('');
-        }
-
-        // 残り時間を計測
-        function countDown() {
-            messageArea.textContent = timeLeft / 10 + " 秒 "
-            progressBar.value = timeLeft;
-            if (timeLeft <= 0) {
-                stopTyping();
-                return;
-            }
-            if (timeLeft > 600) {
-                timeLeft = 600;
-            }
-            timeLeft--;
-        }
-
-        // キー押下時の処理
-        document.onkeydown = function (e) {
-            var keyStr;
-            if (e.keyCode == 189) {
-                keyStr = "-";
-            } else {
-                keyStr = String.fromCharCode(e.keyCode);
-            }
-
-            if (wordChars[charIndex] == keyStr) {
-                charIndex++;
-                typeArea.textContent = typeArea.textContent + keyStr;
-                if (charIndex == wordChars.length) {
-                    score++;
-                    timeLeft += 15;
-                  if(score >= 5){    //5問でクリア
-                        stopTyping();
-                        swal('Good job!','5問正解!クリア!','success');
-                  }else{
-                      nextWord();
-                  }
-                }
-            } else {
-                timeLeft -= 15;
-            }
-
-        };
-    </script>
-    <style>
-        #aaa {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            margin: auto;
-            text-align: center;
-            background-color: rgba(128, 128, 255, 0.4);
-        }
-
-        body {
-            text-align: center;
-        }
-        form{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 400px;
-            height: 300px;
-            margin: -150px 0px 0px -200px; /* 幅と高さの半分のネガティブマージン */
-        }
-
-        #remain {
-            position: fixed;
-            top: 3.5em;
-            left: 0;
-            right: 0;
-            width: 100%;
-            height: 2em;
-            opacity: 0.9;
-            background-color: #10a8eb;
-        }
-
-        #keyword {
-            position: fixed;
-            top: 3.5em;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            font-size: 5em;
-            vertical-align: middle;
-        }
-        
-        #message{
-            font-size: 2.3em;
-        }
-        
-        #keyword #type {
-            font-size: 0.5em;
-            color: gray;   
-        }
-        
-        .navbar-default {
-            background-color: #3498db;
-            border-color: rgba(34,34,34,.05);
-            transition: all .35s;   
-        }
-        
-        .navbar-default .navbar-header .navbar-brand{
-            color: #ffffff;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-        
-        #but_mes{
-            position: fixed;
-            top: 7em;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            font-size: 3m;
-            vertical-align: middle;
-        }
-
-    </style>
 </head>
-
 <body id="page-top">
-
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -313,11 +131,12 @@
 
 <script src="../vender/jquery/jquery.min.js"></script>
 <script src="../vender/bootstrap/bootstrap.min.js"></script>
-<script src="js/npm.js"></script>
+
+<!-- わからない -->
+<!-- <script src="js/npm.js"></script> -->
 
 <!-- Theme JavaScript -->
 <script src="../vender/creative/creative.min.js"></script>
 
 </body>
-
 </html>
