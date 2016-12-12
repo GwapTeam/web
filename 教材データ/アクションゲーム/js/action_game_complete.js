@@ -39,7 +39,7 @@ eval(xhr.responseText);
                     var scene = new Scene();
                     var blocks = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
 
-                    var blockset = [3,3,3,3,3,3,3,3,0,0,0,0,0,10,3,10,3,3,4,5,6,7,8,9,10,3,3,3,3,3,3,3,3,3,3,3];
+                    var blockset = [3,3,3,3,3,3,3,3,0,0,0,0,10,3,3,10,3,3,4,5,6,7,8,9,10,3,3,3,3,3,3,3,3,3,3,3];
 
 
 
@@ -156,7 +156,7 @@ eval(xhr.responseText);
                         });
                     }
                     enemyconf(enemygroup.childNodes[0],500);
-                    enemyconf(enemygroup.childNodes[1],260);
+                    enemyconf(enemygroup.childNodes[1],270);
 
 
                     var enemyhitgroup = new Group();
