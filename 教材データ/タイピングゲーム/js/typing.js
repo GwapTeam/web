@@ -94,7 +94,7 @@ document.onkeydown = function (e) {
         if (charIndex == wordChars.length) {
             score++;
             timeLeft += 15;
-          if(score >= 5){    //5問でクリア
+          if(score >= 50){    //50問でクリア
                 stopTyping();
                 alert('クリア');
                 //sweetalert表示されない(´；ω；`)ｳｩｩ
