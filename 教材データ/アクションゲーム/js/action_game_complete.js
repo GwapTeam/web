@@ -37,11 +37,11 @@ eval(xhr.responseText);*/
                     var scene = new Scene();
                     var blocks = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
 
-                    var blockset = [3,3,3,3,3,3,3,3,0,0,0,0,10,3,3,10,3,3,4,5,6,7,8,9,10,3,3,3,3,3,3,3,3,3,3,3];
+                    var blockSet = [3,3,3,3,3,3,3,3,0,0,0,0,10,3,3,10,3,3,4,5,6,7,8,9,10,3,3,3,3,3,3,3,3,3,3,3];
 
 
 
-                    function mapset(blocks,blockset){
+                    function mapSet(blocks,blockset){
                         var count = 0;
                         for(var i = 0;i<20;i++){
                             for(var j = 0;j<blockset.length;j++){
@@ -59,7 +59,7 @@ eval(xhr.responseText);*/
                         }
                     }
 
-                    mapset(blocks,blockset);
+                    mapSet(blocks,blockSet);
 
 
 
