@@ -6,16 +6,16 @@ var wordList = [
 ];
 
 // 時間制限
-var timeLimit = 600;    //60.0秒
+var timeLimit = 600;    // 60.0秒
 var timer1;
 var wordStr;
 var wordChars;
 var charIndex;
 var messageArea;
-var wordArea;
-var typeArea;
-var score;
-var timeLeft;
+var wordArea;           // 問題文字列
+var typeArea;           // タイピングした文字列
+var score;              // 正解数
+var timeLeft;           // 残り時間
 
 window.onload = function () {
     messageArea = document.getElementById("message");
