@@ -2,10 +2,10 @@
 var wordList = [
     // 初期単語
     "Web","Game","iPhone","Android",
-
-
-
-
+    // 干支
+    "sun","mercury","venus","earth","mars","jupiter","saturn","uranus","neptune","moon",
+    // 惑星
+    "mouse","cow","tiger","rabbit","dragon","snake","horse","sheep","bird","monkey","dog","boar"
 ];
 
 var timeLimit = 600;    // 60.0秒
@@ -90,9 +90,16 @@ document.onkeydown = function (e) {
         typeArea.textContent = typeArea.textContent + keyStr;
         if (charIndex == wordChars.length) {
             score++;            // 正解数 +1
-            nextWord();         // 次の単語へ
+            timeLeft += 15;     // 残り時間1.5秒増
+            if(score >= 5){     // 5問でクリア
+                stopTyping();
+                swal("Good job!","5問正解!クリア!","success");
+            }else{
+                nextWord();     //次の単語へ
+            }
         }
     }else{
+        timeLeft -= 15;         // 残り時間1.5秒減
     }
 
 };

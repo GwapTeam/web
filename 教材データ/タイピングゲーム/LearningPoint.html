@@ -36,8 +36,162 @@
 		<div id="editorTabContents">
 			<textarea id="editor"># 学習ポイント
 ## 第5回
-## 第6回
-* 
+* **文字の大きさの変更**  
+    - font-size の値の変更（ typing.css ）
+    ```
+    49 : font-size: 0.1em;
+    ```
+    の **0.1** を **3** に変更。
+    ```
+    53 : font-size: 0.1em;
+    ```
+    の **0.1** を **0.5** に変更。
+* **背景画像の挿入**  
+    - background-imageを追加（ typing.css ）
+    ```
+    6 : background-image: url(../img/background.png);
+    ```
+    を追加。
+* **背景画像の透明度の変更**
+    - opacityを追加（ typing.css ）
+    ```
+    11 : opacity: 0.5;
+    ```
+    を追加。
+* **文字色の変更**
+    - color の変更（ typing.css ）
+    ```
+    55 : color: grey;
+    ```
+    の **grey** を好きな（見やすい）色に変更。（例：red,blue）   
+    色見本サイト : http://hogehoge.tk/webdev/color/
+* **問題単語の追加**
+    - 配列の要素追加（ typing.js ）
+    ```
+    2 : var wordList = [
+    3 : // 初期単語
+    4 : "Web","Game","iPhone","Android",
+    5 :
+    6 : 
+    7 : 
+    8 :  
+	9 : ];
+    ```
+    5行目から下に単語を追加していく。
+    ```
+    2 : var wordList = [
+    3 : // 初期単語
+    4 : "Web","Game","iPhone","Android",
+    5 : // 干支
+    6 : "sun","mercury","venus","earth","mars","jupiter","saturn","uranus","neptune","moon",
+    7 : // 惑星
+    8 : "mouse","cow","tiger","rabbit","dragon","snake","horse","sheep","bird","monkey","dog","boar"
+	9 : ];
+    ```
+* **残り時間の追加、可視化**  
+    - progressバーの追加（ typing.html ）
+    ```
+    94 : &lt;progress id="remain" max=600 value=600&gt;&lt;/progress&gt;
+    ```
+    を追加。
+***
+### 早く終わった生徒用  
+* **問題単語の追加**  
+上と同じ
+* **文字色の変更**  
+    - 変更できる部分
+    ```
+    65 : color: white;
+    
+    71 : color: white;
+    ```
+
+* **タイピングゲームで遊ぶ**    
+***
+## 第6回  
+* **色の変更**  
+    - background-colorの値の変更（ typing.css ）
+    ```
+    59 : background-color: grey;
+    ```
+    の **grey** を好きな色に変更。（例：red,blue）  
+    色見本サイト : http://hogehoge.tk/webdev/color/
+    
+* **正解した時に秒数増加**  
+    - if文の処理の追加（ typing.js ）
+    ```
+    92 : score++;            // 正解数 +1
+	93 : nextWord();         // 次の単語へ
+
+    ```
+    の間に
+    ```
+    timeLeft += 15;
+    ```
+    を追加。
+* **ミスタイプした時に秒数減少**  
+    - if文の else の処理の追加（ typing.js ）  
+    ```
+    96 : }else{
+    97 : }
+    ```
+    の間に
+    ```
+    timeLeft -= 15;
+    ```
+    を追加。
+    
+* **クリア判定を追加**  
+    - if文の追加（ typing.js ）  
+    ```
+    94 : nextWord();	// 次の単語へ
+    ```
+    を
+    ```
+    94 : if(score &gt;= 5){
+    95 :     stopTyping();
+    96 : alert("5問正解！！クリアしました!!");
+    97 : }else{
+    98 : nextWord();
+    99 : }
+    ```
+    に変更。
+    
+* **アラートの見た目を綺麗に**  
+    - SweetAlertの導入（ typing.js ）
+   	```
+    96 : alert("5問正解！！クリアしました!!");
+   	```
+   	を
+    ```
+    96 : swal("Good job!","5問正解!クリア!","success");
+	```
+	に変更。
+***
+### 早く終わった生徒用  
+* **増減秒数の変更**
+```
+timeLeft += 15;
+timeLeft -= 15;
+```
+の **15（1.5秒）** を変更する。
+* **クリア判定の変更**  
+    ```
+    94 : if(score &gt;= 5){
+    95 :     stopTyping();
+    96 : alert("5問正解！！クリアしました!!");
+    97 : }else{
+    98 : nextWord();
+    99 : }
+    ```
+    の **5** を変更する。
+* **問題単語の追加**  
+上と同じ
+* **色の変更**  
+上と同じ
+* **タイピングゲームで遊ぶ**
+   
+***
 </textarea>
 			<textarea id="cssEditor">/*
  * CSSの設定を間違えると、最悪の場合
