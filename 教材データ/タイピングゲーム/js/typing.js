@@ -96,8 +96,6 @@ document.onkeydown = function (e) {
             timeLeft += 15;
           if(score >= 5){    //5問でクリア
                 stopTyping();
-                //alert('クリア');
-                //sweetalert表示されない(´；ω；`)ｳｩｩ
                 swal("Good job!","5問正解!クリア!","success");
           }else{
               nextWord();
