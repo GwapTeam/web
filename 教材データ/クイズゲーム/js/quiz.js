@@ -15,7 +15,7 @@ function startClick(){
 function question() {
     var h1Text = document.getElementById(h1id);
     h1Text.textContent = queList[0];
-    document.body.style.backgroundColor = "#BBFFAA";
+    document.body.style.backgroundColor = "lightgreen";
 
 }
 
