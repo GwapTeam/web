@@ -259,15 +259,15 @@
                         }
 
                         //右判定
-                        if (map.hitTest(dx + bear.width - 10, dy + (bear.height/2))) {
+                        if () {
                             bear.vx = -2;
                         }
                         //左判定
-                        if(map.hitTest(dx-1,dy + (bear.height/2))){
+                        if(){
                             bear.vx = 2;
                         }
                         //上判定
-                        if(map.hitTest(dx + (bear.width/2),dy - 1)){
+                        if(){
                             bear.vy = 1;
                         }
 
@@ -282,7 +282,7 @@
                         /*
 
                         //ゴールとの当たり判定
-                        if(bear.intersect(goal)){
+                        if(){
                             game.replaceScene(createGameclearScene());
                         }
 
