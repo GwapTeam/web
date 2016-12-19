@@ -7,6 +7,10 @@ var i = 0;  //正解問題数
 var count = 1;  //現在の回答問題数
 var h1id = 'h1id';
 
+function startClick(){
+    location.href="quiz_question.html";
+}
+
 
 function question() {
     var h1Text = document.getElementById(h1id);
