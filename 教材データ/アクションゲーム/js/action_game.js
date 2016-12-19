@@ -25,9 +25,9 @@
                 //ゲーム画面
                 var createGameScene = function () {
                     var scene = new Scene();
-                    var blocks = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
+                    /*var blocks = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
 
-                    var blockSet = [3,3,3,3,3,3,3,3,0,0,0,0,10,3,3,10,3,3,4,5,6,7,8,9,10,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3];
+                    var blockSet = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3];
 
 
 
@@ -56,21 +56,33 @@
                     var map = new Map(16, 16);
                     map.image = game.assets["img/map2.gif"];
                     map.loadData(blocks); //チップの並びを配列で指定
-                    //scene.addChild(map); //画面に画像をロード
+                    //scene.addChild(map); //画面に画像をロード　ここを消すことを忘れるな！
 
 
                     //ゴール
-                    var goal = new Sprite(32,64);
+                    /*var goal = new Sprite(32,64);
                     goal.image = game.assets["img/space0.png"];
                     goal.x = 700;
                     goal.y = 150;
+                    */
 
 
 
 
                     var bear = new Sprite(32, 32);
-                    bear.image = game.assets["img/chara1.png"];
-                    //scene.addChild(bear);
+                    bear.image = game.assets[""];
+                    scene.addChild(bear);          //ここを消すことを忘れるな！
+
+
+                    /*bear.addEventListener(Event.ENTER_FRAME,function(e){
+                        if(game.input.right){
+                            bear.x += 5;
+                        }else if(game.input.left){
+                            bear.x -= 5;
+                        }
+                    });*/
+
+                    /*
 
 
                     var enemygroup = new Group();
@@ -78,6 +90,14 @@
                         var enemy = new Sprite(32,32);
                         enemygroup.addChild(enemy);
                     }
+
+                    /*var enemy = new Sprite(32,32);
+                    enemy.image = game.assets["img/chara2.png"];
+                    */
+
+                    /*
+
+
 
 
                     //敵の設定を関数化
@@ -143,6 +163,10 @@
                             enemy.y = ey;
                         });
                     }
+
+
+                    //enemyconf(enemy,500);
+
                     enemyconf(enemygroup.childNodes[0],500);
                     enemyconf(enemygroup.childNodes[1],270);
 
@@ -165,6 +189,7 @@
                     }
                     enemyhitconf(enemyhitgroup.childNodes[0],enemygroup.childNodes[0]);
                     enemyhitconf(enemyhitgroup.childNodes[1],enemygroup.childNodes[1]);
+
 
 
 
@@ -222,6 +247,8 @@
                         }
 
 
+
+
                         //当たり判定
                         var dx = bear.x + bear.vx + 5;
                         var dy = bear.y + bear.vy;
@@ -232,27 +259,37 @@
                         }
 
                         //右判定
-                        if (map.hitTest(dx + bear.width - 10, dy + (bear.height/2))) {
+                        if () {
                             bear.vx = -2;
                         }
                         //左判定
-                        if(map.hitTest(dx-1,dy + (bear.height/2))){
+                        if(){
                             bear.vx = 2;
                         }
                         //上判定
-                        if(map.hitTest(dx + (bear.width/2),dy - 1)){
+                        if(){
                             bear.vy = 1;
                         }
+
+
                         //敵との当たり判定
                         for(var i =0;i<2;i++){
                            if(bear.intersect(enemyhitgroup.childNodes[i])){
                             game.replaceScene(createGameoverScene());
                            }
                         }
+
+                        /*
+
                         //ゴールとの当たり判定
-                        if(bear.intersect(goal)){
+                        if(){
                             game.replaceScene(createGameclearScene());
                         }
+
+
+                        */
+
+                        /*
 
                         bear.x = dx - 5;
                         bear.y = dy;
@@ -263,13 +300,16 @@
 
                     });
 
+
+
                     var stage = new Group();
                     var stageblock = 0;
                     stage.addChild(map);
                     stage.addChild(bear);
                     stage.addChild(enemygroup);
                     stage.addChild(enemyhitgroup);
-                    stage.addChild(goal);
+                    //stage.addChild(goal);
+                    //stage.addChild(enemy);
                     stage.addEventListener(Event.ENTER_FRAME, function (e) {
                         //面白い
                         if (stage.x > 64 - bear.x) {
@@ -285,6 +325,8 @@
                     });
 
                     scene.addChild(stage);
+
+                    */
 
 
                     scene.addEventListener(Event.TOUCH_START, function (e) {
