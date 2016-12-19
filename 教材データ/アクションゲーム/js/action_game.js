@@ -70,7 +70,7 @@
 
 
                     var bear = new Sprite(32, 32);
-                    bear.image = game.assets["img/chara1.png"];
+                    bear.image = game.assets[""];
                     scene.addChild(bear);          //ここを消すことを忘れるな！
 
 
