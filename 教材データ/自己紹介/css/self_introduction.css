@@ -11,11 +11,11 @@ table {
     background-color: #F1F8E9;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
 }
-tr > th {
+tr > td {
     border-bottom: 1px solid cyan;
     padding: 0 1.6em;
 }
-tr > th:nth-child(2n) {
+tr > td:nth-child(2n) {
     text-align: right;
 }
 img {

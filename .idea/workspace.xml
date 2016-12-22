@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="54f225d6-d4a0-49fd-bf46-b76d48a59f48" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/教材データ/自己紹介/css/self_introduction.css" afterPath="$PROJECT_DIR$/教材データ/自己紹介/css/self_introduction.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/教材データ/自己紹介/self_introduction_complete.html" afterPath="$PROJECT_DIR$/教材データ/自己紹介/self_introduction_complete.html" />
     </list>
     <ignored path="web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,17 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="action_game_complete.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/教材データ/アクションゲーム/js/action_game_complete.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="self_introduction.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="self_introduction.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/教材データ/自己紹介/self_introduction.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -55,11 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="self_introduction_complete.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="self_introduction_complete.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/教材データ/自己紹介/self_introduction_complete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+            <state relative-caret-position="330">
+              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="self_introduction.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/教材データ/自己紹介/css/self_introduction.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -86,9 +88,9 @@
         <option value="$PROJECT_DIR$/教材データ/アクションゲーム/seiya_test.html" />
         <option value="$PROJECT_DIR$/教材データ/アクションゲーム/js/action_game_complete.js" />
         <option value="$PROJECT_DIR$/教材データ/タイピングゲーム/typing.html" />
+        <option value="$PROJECT_DIR$/教材データ/自己紹介/self_introduction.html" />
         <option value="$PROJECT_DIR$/教材データ/自己紹介/css/self_introduction.css" />
         <option value="$PROJECT_DIR$/教材データ/自己紹介/self_introduction_complete.html" />
-        <option value="$PROJECT_DIR$/教材データ/自己紹介/self_introduction.html" />
       </list>
     </option>
   </component>
@@ -328,7 +330,7 @@
       <workItem from="1481194542509" duration="47000" />
       <workItem from="1481521759034" duration="172000" />
       <workItem from="1482126647865" duration="5983000" />
-      <workItem from="1482306888055" duration="2476000" />
+      <workItem from="1482306888055" duration="5049000" />
     </task>
     <task id="LOCAL-00001" summary="[update] seiya_test.html">
       <created>1481167185841</created>
@@ -358,11 +360,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482310961829</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="自己紹介ページの実装&#10;&#10;update 男の子.png -&gt; 写真.png&#10;update self_introduction.html&#10;add self_introduction_complete&#10;">
+      <created>1482366985826</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1482366985826</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11301000" />
+    <option name="totallyTimeSpent" value="13874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -595,14 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/教材データ/アクションゲーム/action_game_complete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/教材データ/タイピングゲーム/typing.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
@@ -619,21 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/教材データ/アクションゲーム/js/action_game_complete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/教材データ/自己紹介/css/self_introduction.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -642,10 +628,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/教材データ/自己紹介/self_introduction_complete.html">
+    <entry file="file://$PROJECT_DIR$/教材データ/アクションゲーム/js/action_game_complete.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/教材データ/アクションゲーム/action_game_complete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/教材データ/自己紹介/css/self_introduction.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -654,6 +656,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/教材データ/自己紹介/self_introduction_complete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding />
         </state>
       </provider>
