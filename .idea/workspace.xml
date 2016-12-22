@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54f225d6-d4a0-49fd-bf46-b76d48a59f48" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教材データ/自己紹介/self_introduction_complete.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/教材データ/自己紹介/header.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/教材データ/自己紹介/self_introduction.html" afterPath="$PROJECT_DIR$/教材データ/自己紹介/self_introduction.html" />
     </list>
     <ignored path="web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,21 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="self_introduction.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="self_introduction.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/教材データ/自己紹介/self_introduction.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="self_introduction_complete.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="self_introduction_complete.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/教材データ/自己紹介/self_introduction_complete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="450">
+              <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -331,7 +328,7 @@
       <workItem from="1481194542509" duration="47000" />
       <workItem from="1481521759034" duration="172000" />
       <workItem from="1482126647865" duration="5983000" />
-      <workItem from="1482306888055" duration="1657000" />
+      <workItem from="1482306888055" duration="2476000" />
     </task>
     <task id="LOCAL-00001" summary="[update] seiya_test.html">
       <created>1481167185841</created>
@@ -347,11 +344,25 @@
       <option name="project" value="LOCAL" />
       <updated>1482132860484</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="自己紹介ページの実装&#10;&#10;update 男の子.png -&gt; 写真.png&#10;update self_introduction.html&#10;add self_introduction_complete&#10;">
+      <created>1482310854015</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1482310854015</updated>
+    </task>
+    <task id="LOCAL-00004" summary="自己紹介ページの実装&#10;&#10;update 男の子.png -&gt; 写真.png&#10;update self_introduction.html&#10;add self_introduction_complete&#10;">
+      <created>1482310961829</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1482310961829</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10482000" />
+    <option name="totallyTimeSpent" value="11301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -411,7 +422,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[update] seiya_test.html" />
     <MESSAGE value="self_introductionの全体変更 cssのファイル移動" />
-    <option name="LAST_COMMIT_MESSAGE" value="self_introductionの全体変更 cssのファイル移動" />
+    <MESSAGE value="自己紹介ページの実装&#10;&#10;update 男の子.png -&gt; 写真.png&#10;update self_introduction.html&#10;add self_introduction_complete&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="自己紹介ページの実装&#10;&#10;update 男の子.png -&gt; 写真.png&#10;update self_introduction.html&#10;add self_introduction_complete&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -630,18 +642,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/教材データ/自己紹介/self_introduction.html">
+    <entry file="file://$PROJECT_DIR$/教材データ/自己紹介/self_introduction_complete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/教材データ/自己紹介/self_introduction_complete.html">
+    <entry file="file://$PROJECT_DIR$/教材データ/自己紹介/self_introduction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
