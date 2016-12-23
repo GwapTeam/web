@@ -5,22 +5,17 @@ var queList = ['問題1:テトリスを作ったのは日本人である',
                '問題2:１円玉の直径は2cmである',
                '問題3:塩はカロリー0である',
                '問題4:レモンはミカン科の果物である',
-               '問題5:パンとご飯を同じ分量だけ食べた時、消化が早いのはパンである',	//問題のリスト
-               '問題６:ドライブスルーは馬で入っても注文できる'];
-var ansNum = [0, 1, 1, 1, 0, 1];   //0の時NOを選ぶと正解、1の時YESを選ぶと正解
-var x = 6;//問題数
+               '問題5:パンとご飯を同じ分量だけ食べた時、消化が早いのはパンである'];	//問題のリスト
+var ansNum = [0, 1, 1, 1, 0];   //0の時NOを選ぶと正解、1の時YESを選ぶと正解
+var x = 5;  //問題数
 var i = 0;  //正解数
 var count = 1;  //現在の回答Nom.
 var h1id = 'h1id';
 
-//ここにstartClick
 function startClick(){
-    location.href = "quiz_question.html";
+    location.href="quiz_question.html";
 }
 
-function backColor(){
-  document.body.style.backgroundColor = "lightgreen";
-}
 
 function question() {
     var h1Text = document.getElementById(h1id);
@@ -59,15 +54,12 @@ function question_judge(check) {
     } else {
         swal("不正解", count + "問目終了。", "error");
     }
-//ここにif文
-	if(count < x){
-		countUp();
-	}else{
-		location.href='quiz_kekka.html';
-		//まほうのことば
-		localStorage.setItem('access_count',i);
-	}
-
+    if (count < x) {
+        countUp();
+    } else {
+        location.href = 'quiz_kekka.html';
+        localStorage.setItem('access_count', i);
+    }
 }
 
 function countUp() {
@@ -89,6 +81,7 @@ function float(number, n) {
 
     return Math.round( number * _pow ) / _pow ;
 }
+
 
 /*
  function onClickTrue() {
@@ -122,3 +115,6 @@ function float(number, n) {
  }
  }
  */
+
+
+

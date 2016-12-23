@@ -1,2 +1,7 @@
-body{background-color:lightgreen;
-    text-align: center;}
+body{text-align: center;}
+div {
+        text-align: center;
+    }
+    .answer {
+        margin: 1em; width: 80%; height: 40%; font-size: 3em;
+    }
