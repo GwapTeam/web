@@ -1,6 +1,4 @@
-#初期設定
-git config --global user.email "sdfasfa@gmail.com"
-git config --global user.name "Nozomi"
+
 
 
 #クローン

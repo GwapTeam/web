@@ -1,5 +1,4 @@
 body {
-    margin: 2em auto 0 auto;
     text-align: center;
     background-color: #E1F5FE;
 }
@@ -41,7 +40,23 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    background: url('img/header.jpg') center;
+    background: url('../img/header_1.jpg') center;
     text-align: center;
     color: white;
+}
+
+.quiz-game {
+    background-image: url("../img/quiz_1.jpg");
+}
+
+.action-game {
+    background-image: url("../img/action_1.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.typing-game {
+    background-image: url("../img/typing_1.gif");
 }
