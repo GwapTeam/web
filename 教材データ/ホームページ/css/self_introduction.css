@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #E1F5FE;
+    background-color: #FFECB3;
 }
 table {
     margin: 2em auto;
@@ -32,6 +32,33 @@ h2 {
     font-size: 32px;
 }
 
+section {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+section > .col-lg-8 {
+    background-color:	rgba(255,255,255,0.3);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section > .col-lg-8 > * {
+    color: black;
+    font-weight: bold;
+}
+section > .col-lg-8 > p {
+    color: black;
+}
+section > .col-lg-8 > a:hover {
+    color: orange;
+    transition: all .3s ease;
+    max-width: 32px;
+}
 header {
     position: relative;
     width: 100%;
@@ -42,21 +69,45 @@ header {
     -o-background-size: cover;
     background: url('../img/header_1.jpg') center;
     text-align: center;
+    display: flex;
+    justify-content: center;
     color: white;
 }
 
 .quiz-game {
-    background-image: url("../img/quiz_1.jpg");
-}
-
-.action-game {
-    background-image: url("../img/action_1.jpg");
+    background-image: url("../img/quiz_2.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left bottom;
+    min-height: 500px;
+}
+
+.action-game {
+    background-image: url("../img/action_8.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    min-height: 500px;
+
 }
 
 .typing-game {
-    background-image: url("../img/typing_1.gif");
+    background-image: url("../img/typing_5.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    min-height: 500px;
+
 }
