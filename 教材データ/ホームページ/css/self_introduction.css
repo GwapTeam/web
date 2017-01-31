@@ -2,7 +2,7 @@ body {
     text-align: center;
     background-color: #FFF8E1;
 }
-table {
+#about > table {
     margin: 2em auto;
     font-size: 32px;
     text-align: left;
@@ -10,11 +10,11 @@ table {
     background-color: #F1F8E9;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
 }
-tr > td {
+#about > tr > td {
     border-bottom: 1px solid cyan;
     padding: 0 1.6em;
 }
-tr > td:nth-child(2n) {
+#about > tr > td:nth-child(2n) {
     text-align: right;
 }
 #about > img {
@@ -138,6 +138,66 @@ header {
 
 }
 
-.friend-page {
+#friend {
+  width:100%;
+  height:100%;
+  max-width: 875px;
+  margin: 0 auto;
+}
 
+#friend > :nth-child(2) {
+  display:flex;
+  flex-direction:column;
+}
+
+#friend > :nth-child(2) > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow:1;
+}
+
+#friend > :nth-child(2) > div > * {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  /*height: min-content;*/
+  background-color: #E3F2FD;
+  position: relative;
+  padding-bottom: 30%;
+  height: 0;
+  max-width: 100%;
+  overflow: hidden;
+  transition: all .3s ease-out;
+  opacity: 1;
+}
+
+#friend > :nth-child(2) > div > * > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto ;
+  width: 100%;
+  height: 100%;
+}
+
+#friend > :nth-child(2) > div > *:hover > img {
+  display: none;
+  width: 100%;
+  height: 0;
+}
+
+#friend > :nth-child(2) > div > * > :nth-child(2) {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#friend > :nth-child(2n) > :nth-child(2) > *:hover > :nth-child(2) {
+  display: flex;
 }
