@@ -48,33 +48,6 @@ section {
     align-items: stretch;
 }
 
-section > .col-lg-8 {
-    background-color:	rgba(255,255,255,0.3);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-section > .col-lg-8 > hr {
-    margin: 30px auto;
-    border: solid 3px #F05F40;
-    min-width: 60px;
-    max-width: 60px;
-}
-
-section > .col-lg-8 > * {
-    color: black;
-    font-weight: bold;
-}
-section > .col-lg-8 > p {
-    color: black;
-}
-section > .col-lg-8 > a:hover {
-    color: orange;
-    transition: all .3s ease;
-}
 
 #about {
     display: block;
@@ -100,7 +73,7 @@ header {
     color: white;
 }
 
-.quiz-game {
+#quiz {
     background-image: url("../img/quiz_2.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -112,7 +85,7 @@ header {
     min-height: 500px;
 }
 
-.action-game {
+#action {
     background-image: url("../img/action_8.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -125,7 +98,7 @@ header {
 
 }
 
-.typing-game {
+#typing {
     background-image: url("../img/typing_5.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -136,6 +109,59 @@ header {
     background-position: right bottom;
     min-height: 500px;
 
+}
+
+.header-content a,
+#quiz a,
+#typing a,
+#action a {
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 300px;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.header-content a:hover,
+#quiz a:hover,
+#typing a:hover,
+#action a:hover {
+    background-color: orange;
+    transition: all .3s ease;
+}
+
+#quiz,
+#typing,
+#action{
+    margin: 0;
+    background-color:	rgba(255,255,255,0.3);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+
+
+#quiz,
+#typing,
+#action{
+
+}
+
+#quiz p,
+#typing p,
+#action  p {
+    color: black;
 }
 
 #friend {
