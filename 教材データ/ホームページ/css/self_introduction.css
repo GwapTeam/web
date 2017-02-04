@@ -198,6 +198,6 @@ header {
   height: 100%;
 }
 
-#friend > :nth-child(2n) > :nth-child(2) > *:hover > :nth-child(2) {
+#friend > :nth-child(2n) > div > *:hover > :nth-child(2) {
   display: flex;
 }
