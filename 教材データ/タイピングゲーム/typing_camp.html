@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ゲーム紹介ホームページ</title>
+
+    <!-- JQuery -->
+    <script src="../vendor/jpuery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- sweetalert CSS -->
+    <link href="../vendor/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <!-- typing CSS -->
+    <link rel="stylesheet" type="text/css" href="css/typing_camp.css">
+
+</head>
+<body id="page-top">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">MyHomepage</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="homepage.html">Quiz</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="homepage.html">Typing</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="homepage.html">Simulation</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="homepage.html">Adventure</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="homepage.html">About me</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="homepage.html">Friend</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div id="background">
+</div>
+<form>
+    <div id="but_mes">
+        <p>
+            <input type="button" id="start-button" class="btn btn-lg btn-default" value="Start" onClick="onStartButtonClick()">
+            <span id="message">Press Start</span>
+        </p>
+    </div>
+</form>
+
+<div id="keyword">
+    <div style="font-weight: bold;" id="word">&nbsp;</div>
+    <div id="type">&nbsp;</div>
+</div>
+<progress id="remain" max=600 value=600></progress>
+
+<!-- jQuery -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="../vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="../vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- Sweetalert JS -->
+<script type="text/javascript" src="../vendor/sweetalert/sweetalert.min.js"></script>
+
+<!-- Typing JS -->
+<script type="text/javascript" src="js/typing_camp.js"></script>
+
+</body>
+</html>
