@@ -1,0 +1,11 @@
+#background{
+    background-image: url(../img/background10.png);
+    opacity: 0.5
+}
+
+#word{
+    color: yellow;
+}
+.navbar{
+    background-color: blue;
+}
